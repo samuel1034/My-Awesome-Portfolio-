@@ -42,7 +42,7 @@ const projects = (await getCollection('work'))
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Samuel"
 					width="480"
 					height="620"
 					src="/assets/Samuel.jpeg"
@@ -170,7 +170,7 @@ const projects = (await getCollection('work'))
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
 		background:
-			url('/assets/backgrounds/noise.png') top center/220px repeat,
+			url('/assets/backgrounds/background-blue.jpg') top center/220px repeat,
 			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
 			var(--gray-999);
 		background-blend-mode: overlay, normal, normal, normal;
@@ -179,7 +179,7 @@ const projects = (await getCollection('work'))
 	}
 
 	.with-background.bg-variant::before {
-		--hero-bg: var(--bg-image-subtle-1);
+		--accent-regular: var(--bg-image-subtle-1);
 	}
 
 	.section-header {

@@ -16,10 +16,10 @@
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
 	--gray-999: #ffffff;
 
-	--accent-light: #c561f6;
-	--accent-regular: #7611a6;
-	--accent-dark: #1c0056;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
+	--accent-light: #5a9bd4; /* Changed from #c561f6 to a blue color */
+	--accent-regular: #007bff; /* Changed from #7611a6 to a blue color */
+	--accent-dark: #003f7f; /* Changed from #1c0056 to a darker blue color */
+	--accent-overlay: hsla(210, 89%, 67%, 0.33); /* Adjusted hue for blue */
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
 
@@ -38,7 +38,7 @@
 	);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
-		#ca7879,
+		#003f7f, /* Changed to a darker blue */
 		var(--accent-regular),
 		var(--accent-dark)
 	);
@@ -88,11 +88,11 @@
 	--gray-999-basis: 225, 31%, 5%;
 	--gray-999: #090b11;
 
-	--accent-light: #1c0056;
-	--accent-regular: #7611a6;
-	--accent-dark: #c561f6;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
-	--accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
+	--accent-light: #003f7f; /* Changed from #1c0056 to a darker blue color */
+	--accent-regular: #007bff; /* Changed from #7611a6 to a blue color */
+	--accent-dark: #5a9bd4; /* Changed from #c561f6 to a blue color */
+	--accent-overlay: hsla(210, 89%, 67%, 0.33); /* Adjusted hue for blue */
+	--accent-subtle-overlay: hsla(210, 81%, 36%, 0.33); /* Adjusted hue for blue */
 	--accent-text-over: var(--gray-0);
 
 	--link-color: var(--accent-dark);
@@ -101,9 +101,9 @@
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
-		#ca7879,
+		var(--accent-light), /* Changed from #ca7879 to var(--accent-light) */
 		var(--accent-regular),
-		var(--accent-light)
+		var(--accent-dark)
 	);
 	--gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 
