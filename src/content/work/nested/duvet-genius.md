@@ -22,3 +22,4 @@ This Disney Clone project underscores my ability to:
 This clone reflects my commitment to code quality, design detail, and performance, essential skills for delivering impactful digital experiences in the fast-paced world of frontend development.
 
 <a href="https://disney-clone-samuel-fuentes-genius.vercel.app/" class="inline-block mt-6 px-10 py-4 text-white bg-blue-600 text-lg font-bold rounded-full hover:bg-blue-700 transition duration-200">View Project</a>
+
