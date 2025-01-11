@@ -159,24 +159,23 @@ const projects = (await getCollection('work'))
 	}
 
 	.with-background::before {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    left: 50%;
-    width: 100vw;
-    aspect-ratio: calc(2.25 / var(--bg-scale));
-    top: 0;
-    transform: translateY(-75%) translateX(-50%);
-    /* Remove or comment out the background property */
-    /* background:
-        url('/assets/backgrounds/background-blue.jpg') top center/220px repeat,
-        var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
-        var(--gray-999);
-    background-blend-mode: overlay, normal, normal, normal;
-    mix-blend-mode: var(--bg-blend-mode); */
-    background: white; /* Set plain white background */
-    z-index: -1;
-}
+		--hero-bg: var(--bg-image-subtle-2);
+		content: '';
+		position: absolute;
+		pointer-events: none;
+		left: 50%;
+		width: 100vw;
+		aspect-ratio: calc(2.25 / var(--bg-scale));
+		top: 0;
+		transform: translateY(-75%) translateX(-50%);
+		background:
+			url('/assets/backgrounds/background-blue.jpg') top center/220px repeat,
+			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+			var(--gray-999);
+		background-blend-mode: overlay, normal, normal, normal;
+		mix-blend-mode: var(--bg-blend-mode);
+		z-index: -1;
+	}
 	.with-background.bg-variant::before {
 		--accent-regular: var(--bg-image-subtle-1);
 	}
