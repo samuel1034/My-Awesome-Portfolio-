@@ -4,7 +4,10 @@ import Icon from './Icon.astro';
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="code" color="var(--java-orange)" size="2.5rem" gradient />
+	<div style="display: flex; gap: 1rem; align-items: center;">
+		  <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/356_Vaadin_logo-1024.png" alt="Vaadin Logo" width="48" height="48" />
+		  <img src="https://img.icons8.com/color/48/spring-logo.png" alt="Spring-Logo" height="48" width="48" />
+		</div>
 		<h2>Informatics Engineer | Senior Full-Stack Java Specialist</h2>
 		<div class="expertise-content">
 			<p class="lead">Enterprise-grade solutions with:</p>
@@ -35,14 +38,39 @@ import Icon from './Icon.astro';
 		</div>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="languages" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Multilingual Language Specialist</h2>
-		<p>With proficiency in 5 languages, I bridge communication gaps and ensure clear, culturally aware interactions. My expertise in TESOL and TEFL allows me to engage in diverse global projects, delivering solutions that resonate across linguistic and cultural boundaries.</p>
+		<Icon icon="globe" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Technical Localization Lead</h2>
+		<ul class="tech-highlights">
+			<li>Localized 5 Vaadin apps for EMEA/APAC markets using i18n best practices, ensuring linguistic and cultural precision.</li>
+			<li>Provided precise translations of JavaDoc and technical specifications across English, Spanish, and French, ensuring consistency and clarity.</li>
+			<li>Achieved an 80% reduction in UI translation bugs by designing and deploying custom L10n test automation frameworks.</li>
+		</ul>
+		<div class="metrics">
+			<div class="metric">
+				<span class="number">5</span>
+				<span class="label">Languages</span>
+			</div>
+			<div class="metric">
+				<span class="number">30+</span>
+				<span class="label">Localized Projects</span>
+			</div>
+		</div>
 	</div>
+
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Combining my technical skills with strategic thinking, I approach projects with an innovative mindset. I leverage my Informatics Engineering background to design solutions that are both effective and forward-thinking, while ensuring clear communication in every step of the process.</p>
+		<img src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" alt="Java Logo" width="48" height="48" />
+		<h2>Java Architecture</h2>
+		<ul class="tech-highlights">
+			<li>CI/CD Pipeline Optimization : Engineered seamless Vaadin app deployments via GitLab-AWS integration, minimizing manual intervention and maximizing release efficiency.</li>
+			<li>Engineered scalable systems with integrated monitoring (Micrometer & Prometheus) to optimize JVM performance</li>
+			<li>Delivered high-quality, robust architectures aligned with modern DevSecOps practices.</li>
+		</ul>
+		<div class="metrics">
+			<div class="metric">
+				<span class="number">200+</span>
+				<span class="label">Prod Deploys/Yr</span>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -56,6 +84,45 @@ import Icon from './Icon.astro';
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
 	}
+
+	.metrics {
+		display: flex;
+		justify-content: flex-start; /* align left */
+		align-items: center;
+		gap: 2rem;
+		margin-top: 1.5rem;
+		flex-wrap: wrap; /* ensures responsiveness on smaller screens */
+	}
+
+	.metric {
+		background: var(--gray-900);
+		padding: 1rem 1.5rem;
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+		text-align: center;
+		min-width: 120px;
+		transition: transform 0.3s ease;
+		flex: 0 0 auto; /* prevent stretching */
+	}
+
+	.metric:hover {
+		transform: translateY(-4px);
+	}
+
+	.metric .number {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--accent-regular, #6366f1);
+	}
+
+	.metric .label {
+		margin-top: 0.25rem;
+		font-size: 0.75rem;
+		color: var(--gray-400);
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
 
 	.skills {
 		display: flex;
